@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import ChildA from './ChildA';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const name = 'Praharsh';
+	return (
+		<div className='App'>
+			<h1>App</h1>
+			<ChildA name={name} />
+		</div>
+	);
 }
 
 export default App;
